@@ -15,7 +15,7 @@ const Planets = [
   { name: 'Júpiter', image: JupiterImg },
   { name: 'Saturno', image: SaturnoImg },
   { name: 'Urano', image: Uranoimg },
-  { name: 'Netuno', image: Netunoimg},
+  { name: 'Netuno', image: Netunoimg },
 ];
 
 export default Planets;
