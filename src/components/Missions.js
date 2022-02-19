@@ -8,7 +8,7 @@ class Missions extends React.Component {
     return (
       <div data-testid="missions">
         <Title headline="Missões" />
-        {missions.map((missi) => <MissionCard key={ missi.name } mission={ missi } />)}
+        {missions.map((missi) => <MissionCard key={ missi.name } missao={ missi } />)}
       </div>
     );
   }

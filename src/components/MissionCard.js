@@ -3,28 +3,29 @@ import PropTypes from 'prop-types';
 
 class MissionCard extends React.Component {
   render() {
-    const { mission: { name, year, country, destination } } = this.props;
+    const { missao: { name, year, country, destination } } = this.props;
+    console.log(year);
     return (
       <div data-testid="mission-card">
-        <section data-testid="mission-name">
+        <p data-testid="mission-name">
           {name}
-        </section>
-        <section data-testid="mission-year">
+        </p>
+        <p data-testid="mission-year">
           {year}
-        </section>
-        <section data-testid="mission-country">
+        </p>
+        <p data-testid="mission-country">
           {country}
-        </section>
-        <section data-testid="mission-destination">
+        </p>
+        <p data-testid="mission-destination">
           {destination}
-        </section>
+        </p>
       </div>
     );
   }
 }
 
 MissionCard.propTypes = {
-  mission: PropTypes.shape({
+  missao: PropTypes.shape({
     name: PropTypes.string,
     year: PropTypes.string,
     country: PropTypes.string,
